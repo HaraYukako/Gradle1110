@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.example.demo.domain.neko;
+import com.example.demo.domain.Neko;
 import com.example.demo.service.NekoService;
 
 import lombok.RequiredArgsConstructor;
@@ -25,7 +25,7 @@ public class NekoController {
 	}
 
 	@PostMapping("neko") // nekoへのPOSTを制御する
-	public String insertNeko(@ModelAttribute neko form, Model model) { // formとしてNekoをそのまま使う(手抜き)
+	public String insertNeko(@ModelAttribute Neko form, Model model) { // formとしてNekoをそのまま使う(手抜き)
 		service.insertNeko(form); // DBにinsert
 		model.addAttribute("nekoList", service.getNekoList()); // serviceから一覧を再取得
 		return "neko"; // neko.htmlをクライアントに返す
