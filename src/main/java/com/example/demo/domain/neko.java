@@ -6,5 +6,5 @@ import lombok.Data;
 public class Neko {
 	private int id;
 	private String name;
-	private int ag;
+	private int age;
 }
