@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.domain.neko;
+import com.example.demo.domain.Neko;
 import com.example.demo.mapper.NekoMapper;
 
 import lombok.RequiredArgsConstructor;
@@ -22,7 +22,7 @@ public class NekoService {
 	 *
 	 * @return 一覧
 	 */
-	public ArrayList<neko> getNekoList() {
+	public ArrayList<Neko> getNekoList() {
 		return mapper.getNekoList();
 	}
 
@@ -32,7 +32,7 @@ public class NekoService {
 	 * @param neko
 	 * @return
 	 */
-	public boolean insertNeko(neko neko) {
+	public boolean insertNeko(Neko neko) {
 		return mapper.insertNeko(neko);
 	}
 }

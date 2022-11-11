@@ -6,12 +6,12 @@ import java.lang.reflect.Field;
 
 import org.junit.jupiter.api.Test;
 
-public class nekoTest {
+public class NekoTest {
 	@Test
 	public void testGet() throws Exception {
-		neko neko = new neko();
+		Neko neko = new Neko();
 		int id = 6;
-		String name = new String("いぬ");
+		String name = new String("ねこ");
 		int age = 15;
 
 		//(A-1)
@@ -33,9 +33,9 @@ public class nekoTest {
 
 	@Test
 	public void testSet() throws Exception {
-		neko neko = new neko();
+		Neko neko = new Neko();
 		int id = 6;
-		String name = new String("いぬ");
+		String name = new String("ねこ");
 		int age = 15;
 
 		//(B-1)

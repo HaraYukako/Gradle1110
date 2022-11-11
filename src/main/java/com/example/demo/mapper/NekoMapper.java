@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.example.demo.domain.neko;
+import com.example.demo.domain.Neko;
 
 //@Repository // springのDIの対象となる
 @Mapper // MybatisでxmlのSQLが対応づけられる
@@ -12,8 +12,8 @@ import com.example.demo.domain.neko;
 public interface NekoMapper {
 
 	//	@Bean
-	public ArrayList<neko> getNekoList();
+	public ArrayList<Neko> getNekoList();
 
 	//	@Bean
-	public boolean insertNeko(neko neko);
+	public boolean insertNeko(Neko neko);
 }
