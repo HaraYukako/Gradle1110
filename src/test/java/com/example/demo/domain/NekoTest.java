@@ -6,7 +6,7 @@ import java.lang.reflect.Field;
 
 import org.junit.jupiter.api.Test;
 
-public class NekoTests {
+public class NekoTest {
 	@Test
 	public void testGet() throws Exception {
 		Neko neko = new Neko();
