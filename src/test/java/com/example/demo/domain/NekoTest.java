@@ -11,11 +11,11 @@ public class NekoTest {
 	public void testGet() throws Exception {
 		Neko neko = new Neko();
 		int id = 6;
-		String name = new String("ねこ");
+		String name = new String("いこ");
 		int age = 15;
 
 		//(A-1)
-		java.lang.reflect.Field nameField = neko.getClass().getDeclaredField("name"); //(1)
+		java.lang.reflect.Field nameField = neko.getClass().getDeclaredField("nam"); //(1)
 		nameField.setAccessible(true); //(2)
 		nameField.set(neko, name); //(3)x
 		java.lang.reflect.Field idField = neko.getClass().getDeclaredField("id"); //(1)
