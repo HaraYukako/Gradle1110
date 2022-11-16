@@ -35,7 +35,7 @@ public class NekoTest {
 	public void testSet() throws Exception {
 		Neko neko = new Neko();
 		int id = 6;
-		String name = new String("いぬ");
+		String name = new String("ねこ");
 		int age = 15;
 
 		//(B-1)
