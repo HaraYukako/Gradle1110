@@ -15,7 +15,7 @@ public class NekoTest {
 		int age = 15;
 
 		//(A-1)
-		java.lang.reflect.Field nameField = neko.getClass().getDeclaredField("nam"); //(1)
+		java.lang.reflect.Field nameField = neko.getClass().getDeclaredField("name"); //(1)
 		nameField.setAccessible(true); //(2)
 		nameField.set(neko, name); //(3)x
 		java.lang.reflect.Field idField = neko.getClass().getDeclaredField("id"); //(1)
