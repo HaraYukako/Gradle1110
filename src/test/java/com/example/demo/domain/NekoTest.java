@@ -1,10 +1,10 @@
 package com.example.demo.domain;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
 import java.lang.reflect.Field;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class NekoTest {
 	@Test
