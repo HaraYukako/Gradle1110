@@ -28,8 +28,11 @@ dependencies {
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'junit:junit:4.12'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'junit:junit:4.12', module: 'junit:junit:4.12'
+    }
+    //testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    //testImplementation 'junit:junit:4.12'
 
 
     //implementation 'org.flywaydb:flyway-core' // 追加
